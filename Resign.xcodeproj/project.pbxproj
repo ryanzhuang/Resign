@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		943850011C2A2A7F001007C0 /* ResourceRules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 943850001C2A2A7F001007C0 /* ResourceRules.plist */; };
+		94CC82701C2411E600EADE84 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CC826F1C2411E600EADE84 /* AppKit.framework */; };
+		94CC82721C2411E600EADE84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CC82711C2411E600EADE84 /* Foundation.framework */; };
+		94CC82761C2411E600EADE84 /* Resign.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 94CC82751C2411E600EADE84 /* Resign.xcscheme */; };
+		94CC82791C2411E600EADE84 /* Resign.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC82781C2411E600EADE84 /* Resign.m */; };
+		94CC82851C24120D00EADE84 /* ReSignHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC82841C24120D00EADE84 /* ReSignHelper.m */; };
+		94D3FFDB1C27DB9B0020ACD5 /* UserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3FFDA1C27DB9B0020ACD5 /* UserDefault.m */; };
+		94D3FFDF1C27DC140020ACD5 /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3FFDD1C27DC140020ACD5 /* MainWindow.m */; };
+		94D3FFE01C27DC140020ACD5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D3FFDE1C27DC140020ACD5 /* MainWindow.xib */; };
+		94D3FFE31C27F0FE0020ACD5 /* NSError+JKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3FFE21C27F0FE0020ACD5 /* NSError+JKAdd.m */; };
+		94D3FFE81C27F5850020ACD5 /* resign.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94D3FFE71C27F5850020ACD5 /* resign.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		943850001C2A2A7F001007C0 /* ResourceRules.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ResourceRules.plist; sourceTree = "<group>"; };
+		94CC826C1C2411E600EADE84 /* Resign.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resign.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CC826F1C2411E600EADE84 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		94CC82711C2411E600EADE84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		94CC82751C2411E600EADE84 /* Resign.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Resign.xcscheme; path = Resign.xcodeproj/xcshareddata/xcschemes/Resign.xcscheme; sourceTree = SOURCE_ROOT; };
+		94CC82771C2411E600EADE84 /* Resign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resign.h; sourceTree = "<group>"; };
+		94CC82781C2411E600EADE84 /* Resign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Resign.m; sourceTree = "<group>"; };
+		94CC827D1C2411E600EADE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CC82831C24120D00EADE84 /* ReSignHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReSignHelper.h; sourceTree = "<group>"; };
+		94CC82841C24120D00EADE84 /* ReSignHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReSignHelper.m; sourceTree = "<group>"; };
+		94D3FFD91C27DB9B0020ACD5 /* UserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefault.h; sourceTree = "<group>"; };
+		94D3FFDA1C27DB9B0020ACD5 /* UserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefault.m; sourceTree = "<group>"; };
+		94D3FFDC1C27DC140020ACD5 /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
+		94D3FFDD1C27DC140020ACD5 /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
+		94D3FFDE1C27DC140020ACD5 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		94D3FFE11C27F0FE0020ACD5 /* NSError+JKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+JKAdd.h"; sourceTree = "<group>"; };
+		94D3FFE21C27F0FE0020ACD5 /* NSError+JKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+JKAdd.m"; sourceTree = "<group>"; };
+		94D3FFE71C27F5850020ACD5 /* resign.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = resign.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94CC826A1C2411E600EADE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CC82701C2411E600EADE84 /* AppKit.framework in Frameworks */,
+				94CC82721C2411E600EADE84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94CC82631C2411E600EADE84 = {
+			isa = PBXGroup;
+			children = (
+				94CC82731C2411E600EADE84 /* Resign */,
+				94CC826E1C2411E600EADE84 /* Frameworks */,
+				94CC826D1C2411E600EADE84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94CC826D1C2411E600EADE84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94CC826C1C2411E600EADE84 /* Resign.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94CC826E1C2411E600EADE84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94CC826F1C2411E600EADE84 /* AppKit.framework */,
+				94CC82711C2411E600EADE84 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94CC82731C2411E600EADE84 /* Resign */ = {
+			isa = PBXGroup;
+			children = (
+				94CC82831C24120D00EADE84 /* ReSignHelper.h */,
+				94CC82841C24120D00EADE84 /* ReSignHelper.m */,
+				94CC82771C2411E600EADE84 /* Resign.h */,
+				94CC82781C2411E600EADE84 /* Resign.m */,
+				94D3FFD91C27DB9B0020ACD5 /* UserDefault.h */,
+				94D3FFDA1C27DB9B0020ACD5 /* UserDefault.m */,
+				94D3FFDC1C27DC140020ACD5 /* MainWindow.h */,
+				94D3FFDD1C27DC140020ACD5 /* MainWindow.m */,
+				94D3FFDE1C27DC140020ACD5 /* MainWindow.xib */,
+				94D3FFE11C27F0FE0020ACD5 /* NSError+JKAdd.h */,
+				94D3FFE21C27F0FE0020ACD5 /* NSError+JKAdd.m */,
+				94CC82741C2411E600EADE84 /* Supporting Files */,
+			);
+			path = Resign;
+			sourceTree = "<group>";
+		};
+		94CC82741C2411E600EADE84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				943850001C2A2A7F001007C0 /* ResourceRules.plist */,
+				94CC827D1C2411E600EADE84 /* Info.plist */,
+				94CC82751C2411E600EADE84 /* Resign.xcscheme */,
+				94D3FFE71C27F5850020ACD5 /* resign.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94CC826B1C2411E600EADE84 /* Resign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94CC82801C2411E600EADE84 /* Build configuration list for PBXNativeTarget "Resign" */;
+			buildPhases = (
+				94CC82681C2411E600EADE84 /* Sources */,
+				94CC82691C2411E600EADE84 /* Resources */,
+				94CC826A1C2411E600EADE84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resign;
+			productName = Resign;
+			productReference = 94CC826C1C2411E600EADE84 /* Resign.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94CC82641C2411E600EADE84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ryan;
+				TargetAttributes = {
+					94CC826B1C2411E600EADE84 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 94CC82671C2411E600EADE84 /* Build configuration list for PBXProject "Resign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94CC82631C2411E600EADE84;
+			productRefGroup = 94CC826D1C2411E600EADE84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94CC826B1C2411E600EADE84 /* Resign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94CC82691C2411E600EADE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943850011C2A2A7F001007C0 /* ResourceRules.plist in Resources */,
+				94D3FFE81C27F5850020ACD5 /* resign.strings in Resources */,
+				94D3FFE01C27DC140020ACD5 /* MainWindow.xib in Resources */,
+				94CC82761C2411E600EADE84 /* Resign.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94CC82681C2411E600EADE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D3FFE31C27F0FE0020ACD5 /* NSError+JKAdd.m in Sources */,
+				94D3FFDB1C27DB9B0020ACD5 /* UserDefault.m in Sources */,
+				94CC82791C2411E600EADE84 /* Resign.m in Sources */,
+				94D3FFDF1C27DC140020ACD5 /* MainWindow.m in Sources */,
+				94CC82851C24120D00EADE84 /* ReSignHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		94CC827E1C2411E600EADE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		94CC827F1C2411E600EADE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		94CC82811C2411E600EADE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = Resign/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = ryan.Resign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		94CC82821C2411E600EADE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = Resign/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = ryan.Resign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94CC82671C2411E600EADE84 /* Build configuration list for PBXProject "Resign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CC827E1C2411E600EADE84 /* Debug */,
+				94CC827F1C2411E600EADE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94CC82801C2411E600EADE84 /* Build configuration list for PBXNativeTarget "Resign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CC82811C2411E600EADE84 /* Debug */,
+				94CC82821C2411E600EADE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94CC82641C2411E600EADE84 /* Project object */;
+}

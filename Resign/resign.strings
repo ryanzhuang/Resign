@@ -1,0 +1,45 @@
+#!/bin/sh
+# help="please input ipa name"
+# help_pro="please input provision name like "
+
+
+#need in project build settings "Code Signing Resource Rules Path " = $(SDKROOT)/ResourceRules.plist
+
+input_path=$1
+output_path=$2
+provision_path=$3
+distribution_name=$4
+ipa_name=$5
+resource_rules=$6
+app_path=Payload/$ipa_name.app
+
+echo "---------recodesign begin"
+
+
+rm -rf ./$app_path/_CodeSignature
+cp "$provision_path" ./$app_path/embedded.mobileprovision
+/usr/libexec/PlistBuddy -x -c "print :Entitlements " /dev/stdin <<< $(security cms -D -i $app_path/embedded.mobileprovision) > entitlements.plist
+#input project build setttings [Code Signing Resource Rules Path] = $(SDKROOT)/ResourceRules.plist
+
+resource_path="./$app_path/ResourceRules.plist"
+
+echo $resource_path
+
+if [ ! -f "$resource_path" ]; then
+    echo "---------copy ResourceRules.plist"
+    cp "$resource_rules"  $resource_path
+fi
+
+/usr/bin/codesign -f -s "$distribution_name" --resource-rules $resource_path --entitlements entitlements.plist $app_path
+                                                                                                 
+zip -qr New_$ipa_name.ipa Payload
+echo "---------rm Payload"
+rm -rf ./Payload
+echo "---------rm Symbols"
+rm -rf ./Symbols
+echo "---------rm entitlements.plist"
+rm  ./entitlements.plist
+
+open ./
+                                                                                                 
+echo "签名完成"
