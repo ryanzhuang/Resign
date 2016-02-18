@@ -51,7 +51,7 @@ NSString *const kResourceRulesName = @"ResourceRules";
     NSString *securityResult = [[NSString alloc] initWithData:[fileHandle readDataToEndOfFile] encoding:NSASCIIStringEncoding];
     // Verify the security result
     NSMutableArray *tempGetCertsResult = [NSMutableArray arrayWithCapacity:20];
-    if (securityResult && securityResult.length > 0) {
+    if (securityResult && securityResult.length > 0 && tempGetCertsResult.count > 0) {
         NSArray *rawResult = [securityResult componentsSeparatedByString:@"\""];
         for (int i = 0; i <= [rawResult count] - 2; i+=2) {
             if (rawResult.count - 1 < i + 1) {
